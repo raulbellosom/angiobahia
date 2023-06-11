@@ -1,10 +1,11 @@
 import React from "react";
-import { Navbar } from "flowbite-react";
+import { Navbar, Dropdown } from "flowbite-react";
 import Logo from "../assets/angio_logo.png";
+import Foot from "./Foot";
 
 const Nav = () => {
   return (
-    <Navbar className="sticky top-0 w-full h-auto z-20" fluid rounded>
+    <Navbar color="#3b7bc2" className="sticky top-0 w-full h-auto z-20" fluid>
       <Navbar.Brand href="/">
         <img alt="AngioBahía" className="md:h-16 h-9" src={Logo} />
       </Navbar.Brand>
@@ -24,9 +25,12 @@ const Nav = () => {
         <Navbar.Link className="text-angio-blue-dark" href="#">
           TRATAMIENTOS
         </Navbar.Link>
-        <Navbar.Link className="text-angio-blue-dark" href="#">
-          ACERCA DE
-        </Navbar.Link>
+        <div className="flex justify-start items-center">
+          <Dropdown color={"#fff"} size={10} label="ACERCA DE">
+            <Dropdown.Item href="#">Trayectoria</Dropdown.Item>
+            <Dropdown.Item href="#">Preguntas frecuentes</Dropdown.Item>
+          </Dropdown>
+        </div>
         <Navbar.Link className="text-angio-blue-dark" href="#">
           CONTACTO
         </Navbar.Link>

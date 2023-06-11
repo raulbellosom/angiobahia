@@ -27,7 +27,7 @@ const Home = () => {
       image.removeEventListener("load", handleLoad);
     };
   }, []);
-  console.log(loaded);
+
   return (
     <div className="min-h-screen">
       <Carousel className="min-h-screen h-screen">
@@ -148,7 +148,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-center md:grid md:grid-cols-2 gap-4 h-auto lg:h-96">
+        <div className="flex flex-col flex-col-reverse justify-center md:grid md:grid-cols-2 gap-4 h-auto lg:h-96">
           <div className="flex justify-center items-center">
             <img
               src={medico}

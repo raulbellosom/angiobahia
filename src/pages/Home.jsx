@@ -12,22 +12,6 @@ import sistema_venoso from "../assets/imagenes/sistema.jpg";
 import medico from "../assets/imagenes/medico_bg.jpg";
 
 const Home = () => {
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    const handleLoad = () => {
-      setLoaded(true);
-    };
-
-    const image = new Image();
-    image.addEventListener("load", handleLoad);
-    image.src = doctor;
-
-    return () => {
-      image.removeEventListener("load", handleLoad);
-    };
-  }, []);
-
   return (
     <div className="min-h-screen">
       <Carousel className="min-h-screen h-screen">
@@ -64,17 +48,13 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            <div className={`image-container ${loaded ? "loaded" : ""}`}>
-              <div className="flex items-center flex-col gap-4">
-                <img
-                  alt="AngioBahía"
-                  className="md:h-96 md:w-auto h-56 w-56 transition ease-in-out duration-200 scale-100"
-                  src={doctor}
-                />
-                <p className="text-white text-xl font-bold">
-                  Dr. Alberto Robles
-                </p>
-              </div>
+            <div className="flex items-center max-w-md flex-col gap-4">
+              <img
+                alt="AngioBahía"
+                className="md:h-96 md:w-auto h-56 w-56 transition ease-in-out duration-200 scale-100"
+                src={doctor}
+              />
+              <p className="text-white text-xl font-bold">Dr. Alberto Robles</p>
             </div>
           </div>
         </div>

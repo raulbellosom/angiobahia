@@ -1,7 +1,6 @@
 import React from "react";
 import { Navbar, Dropdown } from "flowbite-react";
 import Logo from "../assets/angio_logo.png";
-import Foot from "./Foot";
 
 const Nav = () => {
   return (

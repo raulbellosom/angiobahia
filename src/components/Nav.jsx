@@ -26,13 +26,13 @@ const Nav = () => {
           TRATAMIENTOS
         </Navbar.Link>
         <Navbar.Link className="text-angio-blue-dark" href="#">
+          CONTACTO
+        </Navbar.Link>
+        <Navbar.Link className="text-angio-blue-dark" href="#">
           <Dropdown color={"#fff"} size={10} label="ACERCA DE">
             <Dropdown.Item href="#">Trayectoria</Dropdown.Item>
             <Dropdown.Item href="#">Preguntas frecuentes</Dropdown.Item>
           </Dropdown>
-        </Navbar.Link>
-        <Navbar.Link className="text-angio-blue-dark" href="#">
-          CONTACTO
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>

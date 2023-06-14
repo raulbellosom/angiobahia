@@ -87,13 +87,13 @@ const Home = () => {
               <div className="flex gap-4">
                 <a
                   href="https://wa.link/5co8bq"
-                  className="rounded-full text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-red hover:bg-angio-red-dark transition ease-in-out duration-150 hover:scale-110"
+                  className="rounded-full text-base text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-red hover:bg-angio-red-dark transition ease-in-out duration-150 hover:scale-110"
                 >
                   <MdEmergency size={24} className="mr-2" />
                   EMERGENCIAS
                 </a>
                 <Link
-                  className="rounded-full text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-red hover:bg-angio-red-dark transition ease-in-out duration-150 hover:scale-110"
+                  className="rounded-full text-base text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-red hover:bg-angio-red-dark transition ease-in-out duration-150 hover:scale-110"
                   to="/contacto"
                 >
                   <MdPermContactCalendar size={24} className="mr-2" />

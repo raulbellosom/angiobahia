@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <div className="min-h-screen h-auto">
       <Nav />
       {children}
-      <div className="fixed bottom-4 right-4 z-50">
+      <div className="fixed bottom-12 right-4 z-50">
         <a
           href="https://wa.link/5co8bq"
           target="_blank"

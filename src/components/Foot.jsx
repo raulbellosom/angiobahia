@@ -35,9 +35,18 @@ export default function Foot() {
                 <Footer.Link href="#">
                   Cirugía para insuficiencia arterial cronica
                 </Footer.Link>
+                <Footer.Link className="md:hidden" href="#">
+                  Colocación de acceso vascular para hemodiálisis
+                </Footer.Link>
+                <Footer.Link className="md:hidden" href="#">
+                  Colocación y retiro de filtro de vena cava
+                </Footer.Link>
+                <Footer.Link className="md:hidden" href="#">
+                  Embolectomia
+                </Footer.Link>
               </Footer.LinkGroup>
             </div>
-            <div>
+            <div className="hidden md:block">
               <Footer.Title title="" />
               <Footer.LinkGroup col>
                 <Footer.Link href="#">

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Carousel } from "flowbite-react";
 import {
@@ -8,7 +8,6 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { MdEmergency, MdFacebook, MdPermContactCalendar } from "react-icons/md";
-import main_bg from "../assets/imagenes/recepcion.png";
 import doctor from "../assets/imagenes/angio_nuevo.png";
 import especialistas from "../assets/imagenes/especialistas.webp";
 import qr from "../assets/wa_link.png";
@@ -18,12 +17,14 @@ import medico from "../assets/imagenes/medico_bg.jpg";
 import Logo from "../assets/angio_logo.png";
 import varices from "../assets/imagenes/pierna_varices.webp";
 import varices_3 from "../assets/imagenes/varices_3.jpg";
+import varices_4 from "../assets/imagenes/varices_4.jpg";
 import pie from "../assets/imagenes/pie.jpg";
+import cirugia_emergencia from "../assets/imagenes/cirugia_emergencia.webp";
 
 const Home = () => {
   return (
     <div className="min-h-screen h-full">
-      <Carousel slideInterval={8000} className="min-h-screen h-screen">
+      <Carousel slideInterval={7000} className="min-h-screen h-screen">
         <div
           style={{
             backgroundImage: `url(${consultorio})`,
@@ -67,7 +68,7 @@ const Home = () => {
         </div>
         <div
           style={{
-            backgroundImage: `url(${especialistas})`,
+            backgroundImage: `url(${cirugia_emergencia})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -77,6 +78,48 @@ const Home = () => {
           <div className="p-5 md:px-20 flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-4 h-full">
             <div className="flex flex-col justify-center gap-4">
               <h2 className="text-angio-red text-4xl font-bold">Emergencias</h2>
+              <p className="text-white md:text-2xl text-base">
+                En AngioBahía, nos enorgullece brindarte atención médica
+                especializada en el cuidado de tu salud vascular. Para ello
+                contamos con tres unidades de atención distribuidas en Bahía de
+                Banderas.
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href="https://wa.link/5co8bq"
+                  className="rounded-full text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-red hover:bg-angio-red-dark transition ease-in-out duration-150 hover:scale-110"
+                >
+                  <MdEmergency size={24} className="mr-2" />
+                  EMERGENCIAS
+                </a>
+                <Link
+                  className="rounded-full text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-red hover:bg-angio-red-dark transition ease-in-out duration-150 hover:scale-110"
+                  to="/contacto"
+                >
+                  <MdPermContactCalendar size={24} className="mr-2" />
+                  UBICAR CONSULTORIOS
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-col justify-center items-center gap-4">
+              <img src={qr} alt="qr" className="w-56 h-56" />
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            backgroundImage: `url(${especialistas})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+          className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white"
+        >
+          <div className="p-5 md:px-20 flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-4 h-full">
+            <div className="flex flex-col justify-center gap-4">
+              <h2 className="text-angio-blue-dark text-4xl font-bold">
+                Tratamientos
+              </h2>
               <p
                 style={{
                   textShadow: "1px 1px 2px #000000",
@@ -100,34 +143,20 @@ const Home = () => {
                   y más...
                 </li>
               </ul>
-              <p className="text-angio-blue-dark md:text-2xl text-base">
-                En caso de emergencia, comuníquese con nosotros a través de los
-                siguientes números:
-              </p>
+            </div>
+            <div className="flex flex-col justify-center items-center gap-8">
+              <div className="md:h-96 md:w-auto h-56 w-56 flex justify-center items-center rounded-full overflow-hidden border-8 border-transparent ring-8 ring-gray-200">
+                <img src={varices_4} alt="qr" className="w-full h-full" />
+              </div>
               <div className="flex gap-4">
-                <a
-                  href="https://wa.link/5co8bq"
-                  className="rounded-full text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-red hover:bg-angio-red-dark transition ease-in-out duration-150 hover:scale-110"
-                >
-                  <MdEmergency size={24} className="mr-2" />
-                  EMERGENCIAS
-                </a>
                 <Link
-                  className="rounded-full text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-red hover:bg-angio-red-dark transition ease-in-out duration-150 hover:scale-110"
+                  className="rounded-full text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-blue-light hover:bg-angio-blue-dark transition ease-in-out duration-150 hover:scale-110"
                   to="/contacto"
                 >
                   <MdPermContactCalendar size={24} className="mr-2" />
-                  CONTACTO
+                  VER TODOS LOS TRATAMIENTOS
                 </Link>
               </div>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-4">
-              <img
-                src={Logo}
-                alt="AngioBahía"
-                className="w-96 h-auto hidden md:block"
-              />
-              <img src={qr} alt="qr" className="w-48 h-48" />
             </div>
           </div>
         </div>

@@ -36,11 +36,15 @@ const Home = () => {
         >
           <div className="flex flex-col md:grid md:grid-cols-2 justify-center w-full h-full items-center gap-4">
             <div className="flex flex-col justify-center gap-4">
-              <img src={Logo} alt="AngioBahía" className="w-64 h-auto" />
+              <img
+                src={Logo}
+                alt="AngioBahía"
+                className="w-full md:w-64 h-auto"
+              />
               <h1 className="text-angio-blue-dark font-bold text-lg md:text-3xl">
                 Centro de Diagnóstico y Tratamiento de Enfermedades Vasculares
               </h1>
-              <p className="text-angio-blue-dark md:text-2xl text-base">
+              <p className="text-angio-blue-dark md:text-2xl text-lg">
                 En AngioBahía, nos enorgullece brindarte atención médica
                 especializada en el cuidado de tu salud vascular.
               </p>
@@ -73,10 +77,10 @@ const Home = () => {
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
-          className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white"
+          className="p-5 md:px-20 flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white"
         >
-          <div className="p-5 md:px-20 flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-4 h-full">
-            <div className="flex flex-col justify-center gap-4">
+          <div className="flex flex-col md:grid md:grid-cols-2 justify-center w-full h-full items-center gap-4">
+            <div className="flex flex-col justify-center items-center gap-4 h-full">
               <h2 className="text-angio-red text-4xl font-bold">Emergencias</h2>
               <p className="text-white md:text-2xl text-base">
                 En AngioBahía, nos enorgullece brindarte atención médica
@@ -84,16 +88,17 @@ const Home = () => {
                 contamos con tres unidades de atención distribuidas en Bahía de
                 Banderas.
               </p>
-              <div className="flex gap-4">
+              <div className="flex flex-col md:flex-row gap-4">
                 <a
                   href="https://wa.link/5co8bq"
-                  className="rounded-full text-base text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-red hover:bg-angio-red-dark transition ease-in-out duration-150 hover:scale-110"
+                  target="_blank"
+                  className="rounded-full md:text-base text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-red hover:bg-angio-red-dark transition ease-in-out duration-150 hover:scale-110"
                 >
                   <MdEmergency size={24} className="mr-2" />
                   EMERGENCIAS
                 </a>
                 <Link
-                  className="rounded-full text-base text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-red hover:bg-angio-red-dark transition ease-in-out duration-150 hover:scale-110"
+                  className="rounded-full md:text-base text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-red hover:bg-angio-red-dark transition ease-in-out duration-150 hover:scale-110"
                   to="/contacto"
                 >
                   <MdPermContactCalendar size={24} className="mr-2" />
@@ -101,7 +106,7 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center gap-4">
+            <div className="flex justify-center md:items-center gap-4 h-full">
               <img src={qr} alt="qr" className="w-56 h-56" />
             </div>
           </div>
@@ -113,9 +118,9 @@ const Home = () => {
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
-          className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white"
+          className="p-5 md:px-20 flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white"
         >
-          <div className="p-5 md:px-20 flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-4 h-full">
+          <div className="flex flex-col md:grid md:grid-cols-2 justify-center w-full h-full items-center gap-4">
             <div className="flex flex-col justify-center gap-4">
               <h2 className="text-angio-blue-dark text-4xl font-bold">
                 Tratamientos
@@ -154,7 +159,7 @@ const Home = () => {
                   to="/contacto"
                 >
                   <MdPermContactCalendar size={24} className="mr-2" />
-                  VER TODOS LOS TRATAMIENTOS
+                  VER TRATAMIENTOS
                 </Link>
               </div>
             </div>

@@ -243,7 +243,7 @@ const Home = () => {
           </div>
           <div className="flex justify-center items-center gap-4 pt-10">
             <Link
-              className="text-angio-blue-light flex justify-center border-b-4 border-angio-blue-light items-center px-4 py-2 hover:text-white hover:bg-angio-blue-dark transition ease-in-out duration-150 hover:scale-110"
+              className="text-angio-blue-light flex justify-center border-b-2 border-angio-blue-light items-center px-4 py-2 hover:text-white hover:bg-angio-blue-dark transition ease-in-out duration-150 hover:scale-110"
               to="/tratamientos"
             >
               VER TODOS LOS TRATAMIENTOS

@@ -23,7 +23,7 @@ import pie from "../assets/imagenes/pie.jpg";
 const Home = () => {
   return (
     <div className="min-h-screen h-full">
-      <Carousel slideInterval={10000} className="min-h-screen h-screen">
+      <Carousel slideInterval={8000} className="min-h-screen h-screen">
         <div
           style={{
             backgroundImage: `url(${consultorio})`,

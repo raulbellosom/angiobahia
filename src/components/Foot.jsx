@@ -17,7 +17,7 @@ export default function Foot() {
               src={logo}
             />
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-2 sm:gap-6">
+          <div className="grid grid-cols-2 gap-8 sm:mt-4 md:grid-cols-3 sm:gap-6">
             <div>
               <Footer.Title title="Acerca de" />
               <Footer.LinkGroup col>
@@ -29,12 +29,17 @@ export default function Foot() {
               <Footer.Title title="Tratamientos" />
               <Footer.LinkGroup col>
                 <Footer.Link href="#">
-                  Cirugía para insuficiencia venosa{" "}
+                  Cirugía para insuficiencia venosa
                 </Footer.Link>
                 <Footer.Link href="#">Cirugía para pie diabético</Footer.Link>
                 <Footer.Link href="#">
                   Cirugía para insuficiencia arterial cronica
                 </Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+            <div>
+              <Footer.Title title="" />
+              <Footer.LinkGroup col>
                 <Footer.Link href="#">
                   Colocación de acceso vascular para hemodiálisis
                 </Footer.Link>

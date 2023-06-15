@@ -156,7 +156,7 @@ const Home = () => {
               <div className="flex gap-4">
                 <Link
                   className="rounded-full text-white font-bold flex justify-center items-center px-4 py-2 bg-angio-blue-light hover:bg-angio-blue-dark transition ease-in-out duration-150 hover:scale-110"
-                  to="/contacto"
+                  to="/tratamientos"
                 >
                   <MdPermContactCalendar size={24} className="mr-2" />
                   VER TRATAMIENTOS

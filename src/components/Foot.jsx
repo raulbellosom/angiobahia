@@ -28,20 +28,31 @@ export default function Foot() {
             <div>
               <Footer.Title title="Tratamientos" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">
+                <Footer.Link href="/tratamientos/cirugia-para-insuficiencia-venosa">
                   Cirugía para insuficiencia venosa
                 </Footer.Link>
-                <Footer.Link href="#">Cirugía para pie diabético</Footer.Link>
-                <Footer.Link href="#">
+                <Footer.Link href="/tratamientos/cirugia-para-pie-diabetico">
+                  Cirugía para pie diabético
+                </Footer.Link>
+                <Footer.Link href="/tratamientos/cirugia-para-insuficiencia-arterial-cronica">
                   Cirugía para insuficiencia arterial cronica
                 </Footer.Link>
-                <Footer.Link className="md:hidden" href="#">
+                <Footer.Link
+                  className="md:hidden"
+                  href="/tratamientos/colocacion-de-acceso-vascular-para-hemodialisis"
+                >
                   Colocación de acceso vascular para hemodiálisis
                 </Footer.Link>
-                <Footer.Link className="md:hidden" href="#">
+                <Footer.Link
+                  className="md:hidden"
+                  href="/tratamientos/colocacion-y-retiro-de-filtro-de-vena-cava"
+                >
                   Colocación y retiro de filtro de vena cava
                 </Footer.Link>
-                <Footer.Link className="md:hidden" href="#">
+                <Footer.Link
+                  className="md:hidden"
+                  href="/tratamientos/embolectomia"
+                >
                   Embolectomia
                 </Footer.Link>
               </Footer.LinkGroup>
@@ -49,13 +60,15 @@ export default function Foot() {
             <div className="hidden md:block">
               <Footer.Title title="" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">
+                <Footer.Link href="/tratamientos/colocacion-de-acceso-vascular-para-hemodialisis">
                   Colocación de acceso vascular para hemodiálisis
                 </Footer.Link>
-                <Footer.Link href="#">
+                <Footer.Link href="/tratamientos/colocacion-y-retiro-de-filtro-de-vena-cava">
                   Colocación y retiro de filtro de vena cava
                 </Footer.Link>
-                <Footer.Link href="#">Embolectomia</Footer.Link>
+                <Footer.Link href="/tratamientos/embolectomia">
+                  Embolectomia
+                </Footer.Link>
               </Footer.LinkGroup>
             </div>
           </div>

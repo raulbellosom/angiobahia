@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Dropdown } from "flowbite-react";
 import Logo from "../assets/angio_logo.png";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -18,21 +19,33 @@ const Nav = () => {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link className="text-angio-blue-dark" href="/">
+        <Link
+          className="text-angio-blue-dark p-2 px-4 border-t border-gray-300 md:border-none"
+          to="/"
+        >
           <p>INICIO</p>
-        </Navbar.Link>
-        <Navbar.Link className="text-angio-blue-dark" href="#">
+        </Link>
+        <Link
+          className="text-angio-blue-dark p-2 px-4 border-t border-gray-300 md:border-none"
+          to="/tratamientos"
+        >
           TRATAMIENTOS
-        </Navbar.Link>
-        <Navbar.Link className="text-angio-blue-dark" href="#">
+        </Link>
+        <Link
+          className="text-angio-blue-dark p-2 px-4 border-t border-gray-300 md:border-none"
+          to="/contacto"
+        >
           CONTACTO
-        </Navbar.Link>
-        <Navbar.Link className="text-angio-blue-dark" href="#">
-          <Dropdown color={"#fff"} size={10} label="ACERCA DE">
+        </Link>
+        <div
+          className="text-angio-blue-dark border-t border-gray-300 md:border-none"
+          to="#"
+        >
+          <Dropdown color={"#fff"} label="ACERCA DE">
             <Dropdown.Item href="#">Trayectoria</Dropdown.Item>
             <Dropdown.Item href="#">Preguntas frecuentes</Dropdown.Item>
           </Dropdown>
-        </Navbar.Link>
+        </div>
       </Navbar.Collapse>
     </Navbar>
   );

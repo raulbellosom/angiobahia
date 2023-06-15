@@ -20,7 +20,7 @@ const Tratamientos = () => {
         }}
         className="flex flex-col items-center justify-center h-96"
       >
-        <h1 className="text-4xl font-bold text-center text-white bg-angio-blue-light/70 px-28 py-2">
+        <h1 className="text-4xl font-bold text-center text-white bg-angio-blue-light/70 md:px-28 p-4">
           Nuestros servicios
         </h1>
       </div>

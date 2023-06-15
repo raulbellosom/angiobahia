@@ -20,7 +20,7 @@ const Layout = ({ children, image = "", title = "", images_carousel = [] }) => {
         }}
         className="flex flex-col items-center justify-center h-96"
       >
-        <h1 className="text-4xl font-bold text-center text-white bg-angio-blue-light/70 px-28 py-2">
+        <h1 className="text-4xl font-bold text-center text-white bg-angio-blue-light/70 md:px-28 md:py-2 p-4">
           {title}
         </h1>
       </div>

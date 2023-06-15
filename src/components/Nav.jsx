@@ -19,33 +19,21 @@ const Nav = () => {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Link
-          className="text-angio-blue-dark p-2 px-4 border-t border-gray-300 md:border-none"
-          to="/"
-        >
+        <Navbar.Link className="text-angio-blue-dark" href="/">
           <p>INICIO</p>
-        </Link>
-        <Link
-          className="text-angio-blue-dark p-2 px-4 border-t border-gray-300 md:border-none"
-          to="/tratamientos"
-        >
+        </Navbar.Link>
+        <Navbar.Link className="text-angio-blue-dark" href="/tratamientos">
           TRATAMIENTOS
-        </Link>
-        <Link
-          className="text-angio-blue-dark p-2 px-4 border-t border-gray-300 md:border-none"
-          to="/contacto"
-        >
+        </Navbar.Link>
+        <Navbar.Link className="text-angio-blue-dark" href="/contacto">
           CONTACTO
-        </Link>
-        <div
-          className="text-angio-blue-dark border-t border-gray-300 md:border-none"
-          to="#"
-        >
-          <Dropdown color={"#fff"} label="ACERCA DE">
+        </Navbar.Link>
+        <Navbar.Link className="text-angio-blue-dark" href="#">
+          <Dropdown size={8} color={"#fff"} label="ACERCA DE">
             <Dropdown.Item href="#">Trayectoria</Dropdown.Item>
             <Dropdown.Item href="#">Preguntas frecuentes</Dropdown.Item>
           </Dropdown>
-        </div>
+        </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

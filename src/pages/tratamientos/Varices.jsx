@@ -6,7 +6,6 @@ import Varices_2 from "../../assets/imagenes/varices_2.jpg";
 import Varices_3 from "../../assets/imagenes/varices_3.jpg";
 import Varices_4 from "../../assets/imagenes/varices_4.jpg";
 import Varices_5 from "../../assets/imagenes/varices_5.jpg";
-import { Modal } from "flowbite-react";
 
 const images_carousel = [
   Varices_bg,
@@ -17,15 +16,11 @@ const images_carousel = [
 ];
 
 const Varices = () => {
-  const [openModal, setOpenModal] = useState(false);
-  const [imageSelected, setImageSelected] = useState("");
   return (
     <Layout
       title="Cirugía para insuficiencia venosa (Várices)"
       image={Varices_bg}
       images_carousel={images_carousel}
-      setImageSelected={setImageSelected}
-      setOpenModal={setOpenModal}
     >
       <div className="flex flex-col items-center justify-center md:justify-start md:items-start md:grid md:grid-cols-4 gap-10 p-10">
         <div className="md:col-span-1 flex flex-col gap-3">

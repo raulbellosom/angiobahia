@@ -27,6 +27,9 @@ const Layout = ({ children, image = "", title = "", images_carousel = [] }) => {
       <div className="flex flex-col items-center justify-center">
         {children}
       </div>
+      <h6 className="text-xl font-bold text-angio-blue-dark text-center p-10">
+        GALERÍA
+      </h6>
       <div className="grid grid-cols-2 md:grid-cols-3">
         {images_carousel.map((image, index) => (
           <div

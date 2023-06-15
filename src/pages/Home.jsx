@@ -80,7 +80,7 @@ const Home = () => {
           className="p-5 md:px-20 flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white"
         >
           <div className="flex flex-col md:grid md:grid-cols-2 justify-center w-full h-full items-center gap-4">
-            <div className="flex flex-col justify-center items-center gap-4 h-full">
+            <div className="flex flex-col justify-center gap-4 h-full">
               <h2 className="text-angio-red text-4xl font-bold">Emergencias</h2>
               <p className="text-white md:text-2xl text-base">
                 En AngioBahía, nos enorgullece brindarte atención médica

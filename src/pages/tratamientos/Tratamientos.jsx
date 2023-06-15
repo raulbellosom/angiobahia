@@ -6,6 +6,7 @@ import pie from "../../assets/imagenes/pie.jpg";
 import insuficiencia_vascular from "../../assets/imagenes/insuficiencia_vascular.webp";
 import varices_3 from "../../assets/imagenes/varices_3.jpg";
 import embolectomia from "../../assets/imagenes/embolectomia.jpg";
+import hemodialisis from "../../assets/imagenes/hemodialisis.webp";
 
 const Tratamientos = () => {
   return (
@@ -102,7 +103,7 @@ const Tratamientos = () => {
         </div>
         <div className="grid grid-rows-2 items-center justify-between shadow-md h-full">
           <img
-            src={insuficiencia_vascular}
+            src={hemodialisis}
             alt="Colocación de acceso vascular para hemodiálisis"
             className="rounded-md shadow-md w-full h-60 object-cover"
           />

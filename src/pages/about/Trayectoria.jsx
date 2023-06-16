@@ -36,7 +36,7 @@ const Trayectoria = () => {
           </div>
         </div>
       </div>
-      <div className="mx-0 md:mx-24 lg:mx-32 flex flex-col md:gap-4 items-center justify-center p-4 md:p-10 pt-10 md:pt-0">
+      <div className="px-0 md:px-24 lg:px-32 flex flex-col md:gap-4 items-center justify-center p-4 md:p-10 pt-10 md:pt-0">
         <h1 className="text-2xl font-bold text-center text-angio-blue-dark pb-4">
           Trayectoria
         </h1>

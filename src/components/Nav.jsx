@@ -30,10 +30,10 @@ const Nav = () => {
         </Navbar.Link>
         <Dropdown color={"#3b7bc2"} label="ACERCA DE" size={8}>
           <Dropdown.Item className="text-angio-blue-dark">
-            <Link to="/trayectoria">TRAYECTORIA</Link>
+            <a href="/trayectoria">TRAYECTORIA</a>
           </Dropdown.Item>
           <Dropdown.Item className="text-angio-blue-dark">
-            <Link to="/preguntas-frecuentes">PREGUNTAS FRECUENTES</Link>
+            <a href="/preguntas-frecuentes">PREGUNTAS FRECUENTES</a>
           </Dropdown.Item>
         </Dropdown>
       </Navbar.Collapse>

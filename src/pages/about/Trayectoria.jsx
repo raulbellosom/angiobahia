@@ -18,7 +18,7 @@ const Trayectoria = () => {
         }}
         className="flex flex-col items-start justify-end h-96 mb-32"
       >
-        <div className="w-full flex flex-col items-center md:flex-row gap-1 md:gap-4 translate-y-32 md:translate-x-24 md:translate-y-20">
+        <div className="w-fit flex flex-col items-center md:flex-row gap-1 md:gap-4 translate-y-32 md:translate-x-24 md:translate-y-20">
           <div className="w-56 h-56 rounded-full overflow-hidden flex flex-col items-center justify-center">
             <img
               src={Doctor}

@@ -21,7 +21,7 @@ export default function Foot() {
             <div>
               <Footer.Title title="Acerca de" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Trayectoria</Footer.Link>
+                <Footer.Link href="/trayectoria">Trayectoria</Footer.Link>
                 <Footer.Link href="#">Preguntas frecuentes</Footer.Link>
               </Footer.LinkGroup>
             </div>

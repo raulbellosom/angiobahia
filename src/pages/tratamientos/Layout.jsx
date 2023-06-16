@@ -1,5 +1,6 @@
 import { Modal } from "flowbite-react";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Layout = ({ children, image = "", title = "", images_carousel = [] }) => {
   const [imageSelected, setImageSelected] = useState("");
@@ -44,6 +45,18 @@ const Layout = ({ children, image = "", title = "", images_carousel = [] }) => {
             />
           </div>
         ))}
+      </div>
+      <div className="flex flex-col items-center justify-center p-10">
+        <p className="text-2xl text-center text-gray-700 mt-8 font-light">
+          Si necesitas más información sobre nuestros servicios, no dudes en
+          contactarnos.
+        </p>
+        <Link
+          to="/contacto"
+          className="mt-4 px-4 py-2 bg-angio-blue-dark text-white rounded-md hover:bg-angio-blue-light text-center"
+        >
+          Contacto
+        </Link>
       </div>
       <Modal dismissible show={showModal} onClose={toggleModal} size="4xl">
         <Modal.Header>{title}</Modal.Header>

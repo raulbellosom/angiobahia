@@ -28,12 +28,14 @@ const Nav = () => {
         <Navbar.Link className="text-angio-blue-dark" href="/contacto">
           CONTACTO
         </Navbar.Link>
-        <Navbar.Link className="text-angio-blue-dark" href="#">
-          <Dropdown size={8} color={"#fff"} label="ACERCA DE">
-            <Dropdown.Item href="#">Trayectoria</Dropdown.Item>
-            <Dropdown.Item href="#">Preguntas frecuentes</Dropdown.Item>
-          </Dropdown>
-        </Navbar.Link>
+        <Dropdown color={"#3b7bc2"} label="ACERCA DE" size={8}>
+          <Dropdown.Item className="text-angio-blue-dark">
+            <Link to="/trayectoria">TRAYECTORIA</Link>
+          </Dropdown.Item>
+          <Dropdown.Item className="text-angio-blue-dark">
+            <Link to="/preguntas-frecuentes">PREGUNTAS FRECUENTES</Link>
+          </Dropdown.Item>
+        </Dropdown>
       </Navbar.Collapse>
     </Navbar>
   );

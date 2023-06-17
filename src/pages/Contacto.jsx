@@ -35,13 +35,17 @@ const Contacto = () => {
     formData.append("message", message);
 
     try {
-      const response = await axios.post("/php/sendEmail.php", formData);
-      const data = await response.json();
+      const response = await axios.post(
+        "https://formspree.io/f/xnqyebpe",
+        formData
+      );
+      const data = await response.data;
       if (data.error) {
         setError(data.error);
         setShowErrorMessage(true);
       } else {
-        setSuccessMessage(data.message);
+        console.log(data);
+        setSuccessMessage("Mensaje enviado con éxito");
         setShowSuccessMessage(true);
         setName("");
         setEmail("");

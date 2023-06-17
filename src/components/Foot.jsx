@@ -22,7 +22,9 @@ export default function Foot() {
               <Footer.Title title="Acerca de" />
               <Footer.LinkGroup col>
                 <Footer.Link href="/trayectoria">Trayectoria</Footer.Link>
-                <Footer.Link href="#">Preguntas frecuentes</Footer.Link>
+                <Footer.Link href="/preguntas-frecuentes">
+                  Preguntas frecuentes
+                </Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>

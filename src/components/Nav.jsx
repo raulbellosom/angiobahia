@@ -75,7 +75,7 @@ const Nav = () => {
             </span>
           </button>
           {isOpen && (
-            <div className="absolute left-0 md:right-0 w-40 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
+            <div className="absolute whitespace-nowrap left-0 md:right-0 w-fit mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
               <div className="py-1">
                 <a
                   href="/trayectoria"

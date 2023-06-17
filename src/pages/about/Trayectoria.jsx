@@ -196,7 +196,7 @@ const Trayectoria = () => {
           </Accordion.Panel>
         </Accordion>
       </div>
-      <div className="flex flex-col items-center justify-center p-10">
+      <div className="flex flex-col items-center justify-center p-4 md:p-10">
         <p className="text-2xl text-center text-gray-700 mt-8 font-light">
           Si necesitas más información sobre nosotros o nuestros servicios, no
           dudes en contactarnos.

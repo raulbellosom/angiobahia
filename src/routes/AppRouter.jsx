@@ -11,6 +11,7 @@ import Varices from "../pages/tratamientos/Varices";
 import VenaCava from "../pages/tratamientos/VenaCava";
 import Trayectoria from "../pages/about/Trayectoria";
 import FAQ from "../pages/about/FAQ";
+import Contacto from "../pages/Contacto";
 import NotFound from "../components/NotFound";
 
 const AppRouter = () => {
@@ -43,6 +44,7 @@ const AppRouter = () => {
           <Route path="/tratamientos/embolectomia" element={<Embolectomia />} />
           <Route path="/trayectoria" element={<Trayectoria />} />
           <Route path="/preguntas-frecuentes" element={<FAQ />} />
+          <Route path="/contacto" element={<Contacto />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

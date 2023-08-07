@@ -136,13 +136,14 @@ const Home = () => {
               </p>
               <ul className="list-disc list-inside">
                 <li className="text-angio-blue-dark md:text-2xl text-base">
-                  Cirugía para insuficiencia venosa
+                  Tratamientos para insuficiencia venosa cronica (varices)
                 </li>
                 <li className="text-angio-blue-dark md:text-2xl text-base">
-                  Cirugía para pie diabético
+                  Tratamiento multidisciplinario del pie diabético
                 </li>
                 <li className="text-angio-blue-dark md:text-2xl text-base">
-                  Cirugía para insuficiencia arterial cronica
+                  Cirugía abierta o endovascular de la enfermedad arterial
+                  periférica
                 </li>
                 <li className="text-angio-blue-dark md:text-2xl text-base">
                   y más...
@@ -197,7 +198,9 @@ const Home = () => {
               <div className="flex flex-col justify-between items-center gap-2 p-4 bg-blue-100 pt-28 h-full">
                 <div className="flex flex-col justify-center items-center gap-2">
                   <h2 className="text-angio-blue-light text-xl text-center font-bold">
-                    Cirugía para insuficiencia venosa
+                    <Link to="/tratamientos/tratamiento-para-insuficiencia-venosa-cronica">
+                      Tratamientos para insuficiencia venosa cronica (varices)
+                    </Link>
                   </h2>
                   <p className="text-gray-500 text-base text-center font-light">
                     La insuficiencia venosa es una condición que se produce
@@ -208,7 +211,7 @@ const Home = () => {
                 <div className="flex justify-center items-center gap-4 pt-4">
                   <Link
                     className="text-white flex justify-center items-center px-4 py-2 bg-angio-blue-light hover:bg-angio-blue-dark "
-                    to="/tratamientos"
+                    to="/tratamientos/tratamiento-para-insuficiencia-venosa-cronica"
                   >
                     VER MÁS
                   </Link>
@@ -227,7 +230,9 @@ const Home = () => {
               <div className="flex flex-col justify-between items-center gap-2 p-4 bg-blue-100 pt-28 h-full">
                 <div className="flex flex-col justify-center items-center gap-2">
                   <h2 className="text-angio-blue-light text-xl text-center font-bold">
-                    Cirugía para pie diabético
+                    <Link to="/tratamientos/tratamiento-multidisciplinario-para-pie-diabetico">
+                      Tratamiento multidisciplinario del pie diabético
+                    </Link>
                   </h2>
                   <p className="text-gray-500 text-base text-center font-light">
                     El pie diabético es una complicación de la diabetes mellitus
@@ -237,7 +242,7 @@ const Home = () => {
                 <div className="flex justify-center items-center gap-4 pt-4">
                   <Link
                     className="text-white flex justify-center items-center px-4 py-2 bg-angio-blue-light hover:bg-angio-blue-dark "
-                    to="/tratamientos"
+                    to="/tratamientos/tratamiento-multidisciplinario-para-pie-diabetico"
                   >
                     VER MÁS
                   </Link>
@@ -256,7 +261,10 @@ const Home = () => {
               <div className="flex flex-col justify-between items-center gap-2 p-4 bg-blue-100 pt-28 h-full">
                 <div className="flex flex-col justify-center items-center gap-2">
                   <h2 className="text-angio-blue-light text-xl text-center font-bold">
-                    Cirugía para insuficiencia arterial cronica
+                    <Link to="/tratamientos/cirugia-abierta-o-endovascular-de-la-enfermedad-arterial-periferica">
+                      Cirugía abierta o endovascular de la enfermedad arterial
+                      periférica
+                    </Link>
                   </h2>
                   <p className="text-gray-500 text-base text-center font-light">
                     La insuficiencia arterial crónica es una condición que se
@@ -267,7 +275,7 @@ const Home = () => {
                 <div className="flex justify-center items-center gap-4 pt-4">
                   <Link
                     className="text-white flex justify-center items-center px-4 py-2 bg-angio-blue-light hover:bg-angio-blue-dark "
-                    to="/tratamientos"
+                    to="/tratamientos/cirugia-abierta-o-endovascular-de-la-enfermedad-arterial-periferica"
                   >
                     VER MÁS
                   </Link>

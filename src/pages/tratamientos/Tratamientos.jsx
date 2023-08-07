@@ -35,20 +35,24 @@ const Tratamientos = () => {
         <div className="grid grid-rows-2 items-center justify-between shadow-md h-full">
           <img
             src={varices_4}
-            alt="Cirugía para insuficiencia venosa (varices)"
+            alt="Tratamientos para insuficiencia venosa cronica (varices)"
             className="rounded-md shadow-md w-full h-60 object-cover"
           />
           <div className="flex flex-col justify-between p-4 h-full">
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              <p>Cirugía para insuficiencia venosa (varices)</p>
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-2">
+              <Link
+                className="hover:text-angio-blue-dark hover:underline"
+                to="/tratamientos/tratamiento-para-insuficiencia-venosa-cronica"
+              >
+                Tratamientos para insuficiencia venosa cronica (varices)
+              </Link>
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
-              La cirugía para insuficiencia venosa es un procedimiento que se
-              realiza para tratar las venas varicosas y la insuficiencia venosa
-              crónica...
+              La insuficiencia venosa crónica, es la enfermedad causada por el
+              inadecuado retorno venoso...
             </p>
             <Link
-              to="/tratamientos/cirugia-para-insuficiencia-venosa"
+              to="/tratamientos/tratamiento-para-insuficiencia-venosa-cronica"
               className="mt-4 px-4 py-2 bg-angio-blue-dark text-white rounded-md hover:bg-angio-blue-light text-center"
             >
               Leer más
@@ -58,20 +62,24 @@ const Tratamientos = () => {
         <div className="grid grid-rows-2 items-center justify-between shadow-md h-full">
           <img
             src={pie}
-            alt="Cirugía para pie diabético"
+            alt="Tratamiento multidisciplinario del pie diabético"
             className="rounded-md shadow-md w-full h-60 object-cover"
           />
           <div className="flex flex-col justify-between p-4 h-full">
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Cirugía para pie diabético
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-2">
+              <Link
+                className="hover:text-angio-blue-dark hover:underline"
+                to="/tratamientos/tratamiento-multidisciplinario-para-pie-diabetico"
+              >
+                Tratamiento multidisciplinario del pie diabético
+              </Link>
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
-              La cirugía para pie diabético es un procedimiento que se realiza
-              para tratar las úlceras en los pies de los pacientes con
-              diabetes...
+              La enfermedad de pie diabético es una de las complicaciones más
+              graves de la Diabetes Mellitus...
             </p>
             <Link
-              to="/tratamientos/cirugia-para-pie-diabetico"
+              to="/tratamientos/tratamiento-multidisciplinario-para-pie-diabetico"
               className="mt-4 px-4 py-2 bg-angio-blue-dark text-white rounded-md hover:bg-angio-blue-light text-center"
             >
               Leer más
@@ -81,20 +89,25 @@ const Tratamientos = () => {
         <div className="grid grid-rows-2 items-center justify-between shadow-md h-full">
           <img
             src={insuficiencia_vascular}
-            alt="Cirugía para insuficiencia arterial cronica"
+            alt="Cirugía abierta o endovascular de la enfermedad arterial periférica"
             className="rounded-md shadow-md w-full h-60 object-cover"
           />
           <div className="flex flex-col justify-between p-4 h-full">
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Cirugía para insuficiencia arterial cronica
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-2">
+              <Link
+                to="/tratamientos/cirugia-abierta-o-endovascular-de-la-enfermedad-arterial-periferica"
+                className="hover:text-angio-blue-dark hover:underline"
+              >
+                Cirugía abierta o endovascular de la enfermedad arterial
+                periférica
+              </Link>
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
-              La cirugía para insuficiencia arterial crónica es un procedimiento
-              que se realiza para tratar la obstrucción de las arterias de las
-              piernas...
+              El término "enfermedades arteriales periféricas" abarca todas las
+              enfermedades arteriales...
             </p>
             <Link
-              to="/tratamientos/cirugia-para-insuficiencia-arterial-cronica"
+              to="/tratamientos/cirugia-abierta-o-endovascular-de-la-enfermedad-arterial-periferica"
               className="mt-4 px-4 py-2 bg-angio-blue-dark text-white rounded-md hover:bg-angio-blue-light text-center"
             >
               Leer más
@@ -108,13 +121,17 @@ const Tratamientos = () => {
             className="rounded-md shadow-md w-full h-60 object-cover"
           />
           <div className="flex flex-col justify-between p-4 h-full">
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Colocación de acceso vascular para hemodiálisis
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-2">
+              <Link
+                to="/tratamientos/colocacion-de-acceso-vascular-para-hemodialisis"
+                className="hover:text-angio-blue-dark hover:underline"
+              >
+                Colocación de acceso vascular para hemodiálisis
+              </Link>
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
-              La colocación de acceso vascular para hemodiálisis es un
-              procedimiento que se realiza para tratar la obstrucción de las
-              arterias de las piernas...
+              La enfermedad renal crónica (ERC) en el adulto se define como la
+              presencia de una alteración estructural...
             </p>
             <Link
               to="/tratamientos/colocacion-de-acceso-vascular-para-hemodialisis"
@@ -127,34 +144,38 @@ const Tratamientos = () => {
         <div className="grid grid-rows-2 items-center justify-between shadow-md h-full">
           <img
             src={varices_3}
-            alt="Colocación y retiro de filtro de vena cava"
+            alt="Tratamiento minimo invasivo de la trombosis venosa profunda"
             className="rounded-md shadow-md w-full h-60 object-cover"
           />
           <div className="flex flex-col justify-between p-4 h-full">
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Colocación y retiro de filtro de vena cava
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-2">
+              <Link
+                to="/tratamientos/tratamiento-minimo-invasivo-de-la-trombosis-venosa-profunda"
+                className="hover:text-angio-blue-dark hover:underline"
+              >
+                Tratamiento minimo invasivo de la trombosis venosa profunda
+              </Link>
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
-              La colocación y retiro de filtro de vena cava es un procedimiento
-              que se realiza para tratar la obstrucción de las arterias de las
-              piernas...
+              La trombosis venosa profunda (TVP) ocurre cuando se forma un
+              coágulo de sangre (trombo) en una o más...
             </p>
             <Link
-              to="/tratamientos/colocacion-y-retiro-de-filtro-de-vena-cava"
+              to="/tratamientos/tratamiento-minimo-invasivo-de-la-trombosis-venosa-profunda"
               className="mt-4 px-4 py-2 bg-angio-blue-dark text-white rounded-md hover:bg-angio-blue-light text-center"
             >
               Leer más
             </Link>
           </div>
         </div>
-        <div className="grid grid-rows-2 items-center justify-between shadow-md h-full">
+        {/* <div className="grid grid-rows-2 items-center justify-between shadow-md h-full">
           <img
             src={embolectomia}
             alt="Embolectomia"
             className="rounded-md shadow-md w-full h-60 object-cover"
           />
           <div className="flex flex-col justify-between p-4 h-full">
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-2">
               Embolectomia
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -168,7 +189,7 @@ const Tratamientos = () => {
               Leer más
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col items-center justify-center p-10">
         <p className="text-2xl text-justify text-gray-700 mt-8 font-light">

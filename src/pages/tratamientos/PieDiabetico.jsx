@@ -1,40 +1,24 @@
 import React from "react";
 import pie from "../../assets/imagenes/pie.jpg";
-import pie_diabetico_3 from "../../assets/imagenes/pie_diabetico_3.webp";
-import Varices_3 from "../../assets/imagenes/varices_3.jpg";
-import pie_diabetico_2 from "../../assets/imagenes/pie_diabetico_2.webp";
+import pie_diabetico_oficial from "../../assets/imagenes/pie_diabetico_oficial.png";
+// import Varices_3 from "../../assets/imagenes/varices_3.jpg";
+// import pie_diabetico_2 from "../../assets/imagenes/pie_diabetico_2.webp";
 import Layout from "./Layout";
 import { Link } from "react-router-dom";
 
-const images_carousel = [pie, pie_diabetico_3, Varices_3, pie_diabetico_2];
+const images_carousel = [pie_diabetico_oficial];
 
 const PieDiabetico = () => {
   return (
     <Layout
-      title="Cirugía Pie Diabético"
+      title="Tratamiento multidisciplinario del pie diabético"
       image={pie}
       images_carousel={images_carousel}
     >
       <div className="flex flex-col items-center justify-center md:justify-start md:items-start md:grid md:grid-cols-4 gap-10 p-10">
         <div className="md:col-span-1 flex flex-col gap-3">
           <h6 className="text-xl font-bold text-angio-blue-dark">
-            DESCRIPCIÓN
-          </h6>
-          <p className="text-justify">
-            El tratamiento del pie diabético implica una combinación de medidas
-            para controlar la diabetes, prevenir lesiones en los pies y tratar
-            cualquier problema existente.
-            <br />
-            En casos más graves, el tratamiento puede incluir cirugía para
-            eliminar tejido muerto o infectado, o para corregir deformidades en
-            el pie.
-            <br />
-            En cualquier caso, es importante tratar el pie diabético lo antes
-            posible para prevenir complicaciones graves.
-            <br />
-          </p>
-          <h6 className="text-xl font-bold text-angio-blue-dark">
-            ¿QUIÉN REALIZA LA CIRUGÍA?
+            ¿QUIÉN REALIZA EL TRATAMIENTO?
           </h6>
           <Link
             to="/trayectoria"
@@ -45,28 +29,37 @@ const PieDiabetico = () => {
         </div>
         <div className="md:col-span-3 flex flex-col gap-3">
           <h6 className="text-xl font-bold text-angio-blue-dark">
-            ¿EN QUÉ CONSISTE LA CIRUGÍA?
+            DESCRIPCIÓN
           </h6>
           <p className="text-justify">
-            El pie diabético se define como una alteración de las estructuras
-            anatómicas y funcionales del pie; como consecuencia del daño que
-            produce la glucosa sanguineal alta sostenida en los diferentes
-            tejidos, que conlleva cambios en los nervios periféricos y
-            estructuras vasculares (arterias), y asociado a un factor
-            desencadenante, dando lugar a úlceras de diverso grado en el pie.
+            La enfermedad de pie diabético es una de las complicaciones más
+            graves de la Diabetes Mellitus. Provoca al paciente un gran
+            sufrimiento y altos costes económicos, y además supone una carga
+            considerable para la familia del paciente, profesionales de la
+            salud, servicios sanitarios y la sociedad en general.
             <br />
             <br />
-            Factores de riesgo más importantes para el desarrollo de pie
-            diabético:
+            A pesar de que tanto la prevalencia como el espectro de la
+            enfermedad de pie diabético varía en las diferentes regiones del
+            mundo, las vías de ulceración son similares en la mayoría de
+            pacientes. Estas úlceras, frecuentemente, son el resultado de una
+            persona con diabetes teniendo simultáneamente dos o más factores de
+            riesgo, donde la neuropatía diabética periférica y la enfermedad
+            arterial periférica desempeñan un papel central.
             <br />
+            <br />
+            La enfermedad arterial periférica (EAP), generalmente causada por
+            aterosclerosis, está presente hasta en un 50% de los pacientes con
+            úlcera de pie diabético.
+            <br />
+            <br />
+            Ofrecemos un manejo individualizado de cada paciente con pie
+            diabetico para evitar la amputacion de extremidad. Si el paciente
+            presenta enfermedad aterial periferica se brindarán opciones de
+            revascularización y si requiere conjuntamente manejo de la infeccion
+            y control metabolico se manejara en conjunto con medicina interna
+            para el manejo adecuado de todos los factores de riesgo.
           </p>
-          <ul className="list-disc list-inside">
-            <li>Mal control de la diabetes.</li>
-            <li>Neuropatías.</li>
-            <li>Deformidades del pie (artropatía de charcot).</li>
-            <li>Aterosclerosis (placas de grasa en las arterias)</li>
-            <li>El tabaco.</li>
-          </ul>
         </div>
       </div>
     </Layout>

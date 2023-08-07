@@ -21,7 +21,7 @@ const Layout = ({ children, image = "", title = "", images_carousel = [] }) => {
         }}
         className="flex flex-col items-center justify-center h-96"
       >
-        <h1 className="text-4xl font-bold text-center text-white bg-angio-blue-light/70 md:px-28 md:py-2 p-4">
+        <h1 className="text-2xl lg:text-4xl font-bold text-center text-white bg-angio-blue-light/70 md:px-28 md:py-2 p-4">
           {title}
         </h1>
       </div>
@@ -31,7 +31,7 @@ const Layout = ({ children, image = "", title = "", images_carousel = [] }) => {
       <h6 className="text-xl font-bold text-angio-blue-dark text-center p-10">
         GALERÍA
       </h6>
-      <div className="grid grid-cols-2 md:grid-cols-3">
+      <div className="grid grid-cols-2 md:grid-cols-3 px-10">
         {images_carousel.map((image, index) => (
           <div
             key={index}
@@ -40,7 +40,7 @@ const Layout = ({ children, image = "", title = "", images_carousel = [] }) => {
             <img
               src={image}
               alt={`image_${index}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover cursor-zoom-in"
               onClick={() => toggleModal(image)}
             />
           </div>

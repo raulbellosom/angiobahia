@@ -12,7 +12,7 @@ export default function Foot() {
           <img
             src={logo}
             alt="Angio Bahía"
-            className="w-32 h-fit max-h-28 mr-16 mb-10"
+            className="w-36 h-auto max-h-20 mr-16 mb-10"
           />
           <div className="grid grid-cols-2 gap-8 sm:mt-4 md:grid-cols-3 sm:gap-6">
             <div>
